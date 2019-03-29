@@ -13,7 +13,7 @@ public class NetMonitor extends BroadcastReceiver {
     private NetObservable observable;
 
 
-    public void addObserver(NetObserver observer) {
+    public void addObserver(NetObserver observer) {//添加观察者
         this.observable.addObserver(observer);
     }
 
@@ -36,6 +36,7 @@ public class NetMonitor extends BroadcastReceiver {
         return instance;
     }
 
+    //创建一个被观察者
     public void init(Context context) {
         this.observable = new NetObservable(context);
         IntentFilter intentFilter = new IntentFilter();

@@ -9,6 +9,9 @@ package com.net.framework;
 import java.util.Observable;
 import java.util.Observer;
 
+/**
+ * Observer<观察者对象>
+ */
 public abstract class NetObserver implements Observer {
     public static class NetAction {
         private boolean isAvailable;
